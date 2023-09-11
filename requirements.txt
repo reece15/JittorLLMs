@@ -1,4 +1,5 @@
 jittor == 1.3.8.5
 jtorch == 0.1.7
+-i https://pypi.jittor.org/simple
 torch
 torchvision
