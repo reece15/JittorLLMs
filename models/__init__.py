@@ -17,7 +17,7 @@ __all__ = [
     "LLMModel"
 ]
 
-availabel_models = ["chatglm", "pangualpha", "llama", "chatrwkv","llama2"]
+available_models = ["chatglm", "pangualpha", "llama", "chatrwkv", "llama2"]
 
 
 class LLMModel:
@@ -30,7 +30,7 @@ class LLMModel:
 
 def get_model(args) -> LLMModel:
     model_name = args.model
-    assert model_name in availabel_models
+    assert model_name in available_models
 
     if model_name == "pangualpha":
         os.environ["log_silent"] = "1"
